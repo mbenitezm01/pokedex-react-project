@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(grey .15em, transparent .15em), linear-gradient(90deg, grey .15em, transparent .15em);
+  background-size: 8em 8em;  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +37,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'Flexo-Medium';
+  src: local('Flexo-Medium'), url(./fonts/Flexo-Medium.woff) format('woff');
 }

@@ -1,0 +1,19 @@
+.image-container {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border: 10px solid crimson;
+    border-radius: 50%;
+    display: flex;
+    box-shadow: 0px 4px 15px rgba(46, 46, 46, 0.8), 0px -4px 15px rgba(46, 46, 46, 0.8), 4px 0px 15px rgba(46, 46, 46, 0.8), -4px 0px 15px rgba(46, 46, 46, 0.8); 
+
+    margin-right: 160px;
+    
+}
+
+.sprite-container img {
+    width:80%;
+    height:80%;
+    margin: auto;
+    
+}
