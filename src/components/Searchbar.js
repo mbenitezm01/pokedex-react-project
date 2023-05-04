@@ -8,7 +8,7 @@ const Searchbar = ({pokeName, setPokeName, handleClick}) =>{
 
     return (
         <div className='searchbar-container'>
-            <h1>PokeDex</h1>
+            <h1>Pokedex</h1>
             <div className='input-container'>
                 <input className='textbox' placeholder='Enter Pokemon name or number' onChange={handleChange}/>
                 <button onClick={handleClick}>Search</button>

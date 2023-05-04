@@ -12,8 +12,8 @@ function Pokedex() {
     const [pokeSpeciesData, setPokeSpeciesData] = useState({}); //Datos de la especie de pokemon
     const [pokeData, setPokeData] = useState({}); //Datos de pokemon
     const [pokeName, setPokeName] = useState(); //Nombre de pokemon a buscar
-    const [isLoading, setIsLoading] = useState(true); //Determina si se esta realizando el get
-    const [found, setFound] = useState(); //Determina si se encontro el pokemon a buscar
+    const [isLoading, setIsLoading] = useState(false); //Determina si se esta realizando el get
+    const [found, setFound] = useState(false); //Determina si se encontro el pokemon a buscar
 
     const fetchPokeData = useCallback(async (name) => {
         try {
@@ -34,14 +34,11 @@ function Pokedex() {
             //Si el get falla, el valor de found cambia a false
             setIsLoading(false);
             setFound(false);
-            console.log('pokemon not found')
+            alert('Pokemon not found');
         }
     }, []);
 
-    //Se realiza un get inicial al cargar la pagina
-    useEffect(() => {
-        fetchPokeData();
-    }, [fetchPokeData]);
+
 
     //Si se esta cargando se regresa una pantalla de loading
     if (isLoading) {
